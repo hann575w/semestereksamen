@@ -145,3 +145,11 @@ margin: 5px;
 .gallery img {
 object-fit: contain;
 }
+
+footer {
+    background-color: rgb(255, 255, 255);
+    padding: 2%;
+
+}
+
+}
