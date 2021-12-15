@@ -3,10 +3,10 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff;
     height: auto;
 }
@@ -17,8 +17,15 @@ header {
     width: 100%;
 }
 
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
 /* h1 styling */
 h1 {
+    font-family: 'Passion One', cursive;
     font-size: 30px;
     color: #232323;
     padding-top: 100px;
@@ -30,8 +37,9 @@ a {
     text-decoration: none;
 }
 
-a :hover {
-    color: #ffff;
+
+.hannaintro {
+    justify-content: center;
 }
 
 
@@ -54,9 +62,6 @@ ul li a{
     font-size: 20px;
 }
 
-nav :hover {
-    color: #ffff;
-}
 
 /* styling af billeder */
 .container {
@@ -64,7 +69,6 @@ nav :hover {
     margin: 0 auto;
     min-height: 100vh;
 }
-
 
 .gallery {
     display: flex;
@@ -92,13 +96,13 @@ nav :hover {
 /* personlige projekter, side: Home */
 .andet {
     width: 330px;
-    height: 265px;
-    margin: -25px;
+    height: 300px;
 }
 
 .andet img {
     object-fit: contain;
     position: absolute;
+    padding: 20px;
 }
 
 /* styling af footer */ 
@@ -119,31 +123,30 @@ footer p {
     body {
         background-color: #f9f9f9;
     }
-img {
-width: 300px;
-height: 400px;
-object-fit: scale-down;
-margin: 10px 10px 10px 10px;
-}
     
 .projekter {
-display: flex;
-flex-direction: row;
-width: 330px;
-height: 265px;
-margin: 5px;
+    margin: 10px;
+    padding: 30px;
+
 }
     
 .andet {
 display: flex;
 flex-direction: row;
-width: 330px;
 height: 265px;
 margin: 5px;
 }
-    
-.gallery img {
-object-fit: contain;
+
+.gallery {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.andet img {
+    width: 330px;
+    height: 265px;
+    object-fit: contain;
 }
 
 footer {
