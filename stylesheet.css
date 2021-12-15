@@ -16,3 +16,20 @@ header {
     text-align: center;
     width: 100%;
 }
+
+/* h1 styling */
+h1 {
+    font-size: 30px;
+    color: #232323;
+    padding-top: 100px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a :hover {
+    color: #ffff;
+}
