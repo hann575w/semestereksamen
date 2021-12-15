@@ -57,3 +57,46 @@ ul li a{
 nav :hover {
     color: #ffff;
 }
+
+/* styling af billeder */
+.container {
+    max-width: 1125px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* skoleprojekter, side: Projects */
+.projekter {
+    width: 330px;
+    height: 265px;
+    margin: -25px;
+}
+
+/* CSS opacity hover inspiration taget fra W3schools: https://www.w3schools.com/css/css_image_transparency.asp */
+.projekter img {
+    position: absolute;
+    object-fit: contain;
+}
+
+.projekter:hover {
+    opacity: 0.8;
+}
+
+/* personlige projekter, side: Home */
+.andet {
+    width: 330px;
+    height: 265px;
+    margin: -25px;
+}
+
+.andet img {
+    object-fit: contain;
+    position: absolute;
+}
