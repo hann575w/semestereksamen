@@ -6,50 +6,50 @@
 }
 
 body {
-    background-color: #f9f9f9;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9; 
     height: auto;
 }
 
 header {
-    background-color: #ffffff;
     display: block;
     text-align: center;
     width: 100%;
+    background-color: #ffffff;
 }
 
 .logo {
-    width: 16rem;
+    size: 16rem;
     object-fit: contain;
-    padding-top: 15px;
 }
 
 /* h1 styling */
 h1 {
     font-size: 27px;
-    background-color: #f9f9f9;
     color: #232323;
+    background-color: #f9f9f9;
     text-transform: uppercase;
-    margin: 0;
+    font-family: 'Passion One', cursive;
     padding-top: 30px;
     padding-bottom: 30px;
-    font-family: 'Passion One', cursive;
-    }
+    margin: 0;
 }
+
 
 h2 {
     font-size: 27px;
     color: #232323;
     text-transform: uppercase;
-    margin: 0;
-    padding-top: 30px;
-    padding-bottom: 30px;
     font-family: 'Passion One', cursive;
+    width: 100%;
+    margin: 15px;
 }
 
-a {
-    text-decoration: none;
+p {
+    width: 100%;
+    margin: 15px;
 }
+
 
 
 /* navigation styling */
@@ -57,7 +57,7 @@ ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 35px;
+    
 }
 
 ul li {
@@ -70,6 +70,37 @@ ul li a {
     font-size: 20px;
 }
 
+/* styling af about section */
+.about {
+    background-color: #E8E8E8;
+}
+
+.wrap-around {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.column img {
+    object-fit: contain;
+    width: 100%;
+    padding: 10px;
+}
+
+.textbox {
+    margin: 30px 0;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+
+}
+
+
+.about img {
+    object-fit: contain;
+    width: 430px;
+    height: 430px;
+}
 
 /* styling af billeder */
 .container {
@@ -78,20 +109,12 @@ ul li a {
     min-height: 100vh;
 }
 
-.about {
-    background-color: #E8E8E8;
-}
-
-.about img {
-    object-fit: contain;
-    width: 430px;
-    height: 430px;
-}
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 
 /* skoleprojekter, side: Projects */
 .projekter {
@@ -111,6 +134,7 @@ ul li a {
 .andet {
     width: 330px;
     height: 300px;
+    margin: 10px;
 }
 
 .andet img {
@@ -157,9 +181,10 @@ h1 {
 
 /* 600px og større */
 @media (min-width: 600px) {
-    body {
-        background-color: #f9f9f9;
-    }
+
+.logo {
+    margin: 0;
+}
 
 h1 {
     font-size: 40px;
@@ -167,25 +192,69 @@ h1 {
     padding-bottom: 30px;
 }
 
-.projekter {
-    margin: 10px;
-    padding: 30px;
-
-}
-    
-.andet {
-style="float: left;"
-display: flex;
-/* height: 265px; */
-margin: 5px;
+img {
+    width: 300px;
+    height: 400px;
+    margin: 10px 10px 10px 10px;
 }
 
 .gallery {
-    width: 100%;
+    display: flex;
+
+}
+.projekter {
+    display: contents;
+    height: auto;
 
 }
 
+.projekter img {
+    display: block;
+    position: relative;
+    align-items: center;
+    width: auto;
+}
 
+.andet {
+    display: contents;
+    height: auto;
+}
+
+.andet img {
+    display: block;
+    position: relative;
+    align-items: center;
+    width: auto;
+}
+
+
+.wrap-around{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+
+.column img {
+    width: 100%;
+}
+
+.column .textbox {
+    width: 50%;
+}
+
+.column {
+    float: left;
+    display: flex;
+}
+
+.column {
+    padding: 0 20px;
+}
+
+p {
+    display: block;
+    justify-content: center;
+}
 
 footer {
     background-color: rgb(255, 255, 255);
